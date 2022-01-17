@@ -61,7 +61,7 @@ npm run dev
 Your extension is now in the /dist folder and can be loaded into chrome.
 
 How to run the backend:
-**Make sure you have Java and Gradle installed**
+**(Make sure you have Java and Gradle installed)**
 ```sh
 cd backend
 sudo chmod ./scripts/deploy.sh
