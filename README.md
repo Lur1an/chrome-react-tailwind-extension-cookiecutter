@@ -39,28 +39,29 @@ I also pre-configured the Popup component with a Sidebar and Navigator.
 I have to thank [Fireship](https://www.youtube.com/c/Fireship) for the TailwindCSS styles for the sidebar-buttons
 
 ## Getting started
-* First, install cookiecutter:
+First, install cookiecutter:
 ```sh
 pip install cookiecutter
 ```
-* Set up the project with cookiecutter:
+Set up the project with cookiecutter:
 ```sh
 cookiecutter .
 ```
-* Install the necessary dependencies to compile the extension:
+Install the necessary dependencies to compile the extension:
 ```sh
 cd extension
 npm install
 ```
-Compile the extension, there are 2 modes dev/prod
-Use dev when you want to debug your code as it provides source maps
-Use prod when you want your code to be minified for shipping
+Compile the extension, there are 2 modes dev/prod.
+Use dev when you want to debug your code as it provides source maps.
+Use prod when you want your code to be minified for shipping.
 ```sh
 npm run dev
 ```
-Your extension is now in the /dist folder and can be loaded into chrome
+Your extension is now in the /dist folder and can be loaded into chrome.
 
-* How to run the backend:
+How to run the backend:
+**Make sure you have Java and Gradle installed**
 ```sh
 cd backend
 sudo chmod ./scripts/deploy.sh
