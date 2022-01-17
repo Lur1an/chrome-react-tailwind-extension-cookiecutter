@@ -64,7 +64,7 @@ How to run the backend:
 **(Make sure you have Java and Gradle installed)**
 ```sh
 cd backend
-sudo chmod ./scripts/deploy.sh
+sudo chmod +x ./scripts/deploy.sh
 ./scripts/deploy
 ```
 
