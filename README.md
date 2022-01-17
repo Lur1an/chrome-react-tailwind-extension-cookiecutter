@@ -31,12 +31,12 @@ You can modify the security configuration in the SecurityConfig.groovy file, the
 * **api-key**
 This is meant for other web-services or admins that want to interact with the API
 * **jwt security**
-The JWT authentication is meant for the end-user running the browser extension, I hope the end-points are self-explanatory,
-once you log the user in you get back a JWT, to authenticate follow up request just add this header:
-**"Authorization": "Bearer \<token>" **
+The JWT authentication is meant for the end-user running the browser extension, I hope the end-points are self-explanatory!
+Feel free to ask for clarification if needed.
 
 The Extension is shipped with a custon Navigator component since you can't use React Router in browser extensions,
-I also pre-configured a homepage with a navigator-sidebar.
+I also pre-configured the Popup component with a Sidebar and Navigator.
+I have to thank [Fireship](https://www.youtube.com/c/Fireship) for the TailwindCSS styles for the sidebar-buttons
 
 ## Getting started
 * First, install cookiecutter:
