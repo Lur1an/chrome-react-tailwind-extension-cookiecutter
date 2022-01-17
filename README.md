@@ -1,3 +1,15 @@
+## Tech Stack
+
+Backend:
+* **Groovy**
+* **Spring Boot 2.6.^**
+* **MongoDB**
+* 
+Extension:
+* **React**
+* **Typescript**
+* **Tailwind**
+
 ## Requirements
 This project might work with older versions of Java/Gradle and NodeJS, 
 I haven't verified for myself, the versions you see below are the ones I used when making this template
