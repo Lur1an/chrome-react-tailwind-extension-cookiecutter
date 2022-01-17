@@ -4,7 +4,7 @@ Backend:
 * **Groovy**
 * **Spring Boot 2.6.^**
 * **MongoDB**
-* 
+
 Extension:
 * **React**
 * **Typescript**
@@ -21,14 +21,19 @@ I haven't verified for myself, the versions you see below are the ones I used wh
 
 ## Description
 After working with Spring APIs and Chrome extensions I wanted to make a cookiecutter template
-to make it easier to set up such project, as it is a tedious task.
-The project comes shipped with some extra functionality both for the extension and the API.
-Feel free to throw anything you don't need into the trash-bin!
+to make it easier to set up such a project, as it is a tedious task.
+The project comes shipped with some functionality that is always useful and 
+in one way or another we always end up implementing as the application scales.
+Feel free to throw away anything you don't need into the trash-bin!
 
-The API is shipped with pre-configured database and a User.groovy class,
-you can modify the security configuration in the SecurityConfig.groovy file,
-there are 2 levels of security, api-key and jwt, api-key is meant for other services that interact with this API,
-the JWT authentication is meant for the end-user running the browser extension
+The API is shipped with pre-configured database and security.
+You can modify the security configuration in the SecurityConfig.groovy file, there are 2 levels of security: 
+* **api-key**
+This is meant for other web-services or admins that want to interact with the API
+* **jwt security**
+The JWT authentication is meant for the end-user running the browser extension, I hope the end-points are self-explanatory,
+once you log the user in you get back a JWT, to authenticate follow up request just add this header:
+**"Authorization": "Bearer \<token>" **
 
 The Extension is shipped with a custon Navigator component since you can't use React Router in browser extensions,
 I also pre-configured a homepage with a navigator-sidebar.
