@@ -1,0 +1,24 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+    container_name: {{cookiecutter.project_name}}-container
+    restart: on-failure
+    depends_on:
+      - mongodb
+    ports:
+      - "80:8080"
+      - "8083:8083"
+  mongodb:
+    image: mongo
+    container_name: mongodb-container
+    hostname: mongodb
+    volumes:
+      - {{cookiecutter.MONGODB_VOLUME_PATH}}:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: {{cookiecutter.MONGO_INITDB_ROOT_USERNAME}}
+      MONGO_INITDB_ROOT_PASSWORD: {{cookiecutter.MONGO_INITDB_ROOT_PASSWORD}}
+    restart: unless-stopped
+    ports:
+      - "27017:27017"

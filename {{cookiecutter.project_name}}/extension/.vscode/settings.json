@@ -1,0 +1,24 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "files.exclude": {
+        "**/.idea": true,
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "css.customData": [
+        ".vscode/css_custom_data.json"
+    ],
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
+    }
+}

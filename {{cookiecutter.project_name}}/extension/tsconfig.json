@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "lib" : ["es2021", "DOM"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "es2021",
+        "allowJs": true,
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop":true,
+    },
+    "include": [
+        "./src/**/*",
+        "src/custom.d.ts",
+        "index.d.ts"
+    ]
+}

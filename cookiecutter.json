@@ -1,0 +1,11 @@
+{
+    "project_name": "MyProject",
+    "project_description": "Chrome extension react/ts/tailwind + spring backend",
+    "MONGO_INITDB_ROOT_USERNAME": "root",
+    "MONGO_INITDB_ROOT_PASSWORD": "password",
+    "MONGODB_VOLUME_PATH": "~/mongodb-volume",
+    "DATABASE_NAME": "mydatabase",
+    "JWT_EXPIRATION_MS": "172800000",
+    "JWT_SECRET": "awd0980291ROLLINGONKEYBOARDYAYoia8whyd983241178",
+    "API_KEY_VALUE": "q23aiwufdhaiwuy897awd79aw70"
+}

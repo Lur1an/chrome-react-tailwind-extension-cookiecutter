@@ -1,0 +1,14 @@
+spring.data.mongodb:
+  authentication-database: admin
+  username: {{cookiecutter.MONGO_INITDB_ROOT_USERNAME}}
+  password: {{cookiecutter.MONGO_INITDB_ROOT_PASSWORD}}
+  port: 27017
+  host: mongodb
+
+
+api-key-header: "api-security-key"
+api-key-value: {{cookiecutter.API_KEY_VALUE}}
+jwt-config:
+  jwt-secret: {{cookiecutter.JWT_SECRET}}
+  jwt-expiration-ms: {{cookiecutter.JWT_EXPIRATION_MS}}
+
